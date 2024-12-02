@@ -20,7 +20,6 @@ class ObstacleManager(
 
 
     private val callback: GameManagerCallback = callback
-
     init {
         obstacles.add(Obstacle(resources, screenHeight, screenWidth, this))
     }
