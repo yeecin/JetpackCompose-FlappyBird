@@ -18,6 +18,7 @@ class ObstacleManager(
     private var progress = 0
     private val speed = resources.getDimension(R.dimen.obstacle_speed).toInt()
 
+
     private val callback: GameManagerCallback = callback
 
     init {
