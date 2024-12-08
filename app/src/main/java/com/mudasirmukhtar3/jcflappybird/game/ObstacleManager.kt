@@ -5,6 +5,7 @@ import android.graphics.Canvas
 import android.graphics.Rect
 import com.mudasirmukhtar3.jcflappybird.R
 
+
 class ObstacleManager(
     private val resources: Resources,
     private val screenHeight: Int,
