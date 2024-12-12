@@ -59,6 +59,7 @@ class Obstacle(
         canvas.drawBitmap(image, null, topPipe, paint)
         canvas.drawBitmap(image, null, topHead, paint)
     }
+
     override fun update() {
         xPosition -= speed
         if (xPosition <= 0 - width - 2 * headExtraWidth) {
