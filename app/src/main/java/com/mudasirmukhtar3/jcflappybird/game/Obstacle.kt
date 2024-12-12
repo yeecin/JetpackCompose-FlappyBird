@@ -77,7 +77,6 @@ class Obstacle(
                 xPosition + width + 2 * headExtraWidth,
                 screenHeight - height - headHeight - separation
             )
-
             positions.add(bottomPosition)
             positions.add(topPosition)
             callback.updatePosition(this, positions)
