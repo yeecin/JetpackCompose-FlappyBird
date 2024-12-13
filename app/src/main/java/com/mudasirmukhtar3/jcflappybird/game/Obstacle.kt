@@ -58,7 +58,6 @@ class Obstacle(
         canvas.drawBitmap(image, null, bottomHead, paint)
         canvas.drawBitmap(image, null, topPipe, paint)
         canvas.drawBitmap(image, null, topHead, paint)
-
     }
 
     override fun update() {
