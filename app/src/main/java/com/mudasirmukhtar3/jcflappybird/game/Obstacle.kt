@@ -34,7 +34,6 @@ class Obstacle(
             random.nextInt(screenHeight - 2 * obstacleMinPosition - separation) + obstacleMinPosition
     }
 
-
     override fun draw(canvas: Canvas?) {
         val bottomPipe = Rect(
             xPosition + headExtraWidth, screenHeight - height, xPosition + width + headExtraWidth,
