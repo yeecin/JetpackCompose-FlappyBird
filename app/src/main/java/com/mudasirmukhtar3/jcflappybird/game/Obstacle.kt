@@ -27,6 +27,7 @@ class Obstacle(
         resources.getDimension(R.dimen.obstacle_min_position).toInt()
     private val image: Bitmap = BitmapFactory.decodeResource(resources, R.drawable.pipes)
     private val callback: ObstacleCallback = callback
+
     init {
         val random = Random(System.currentTimeMillis())
         height =
