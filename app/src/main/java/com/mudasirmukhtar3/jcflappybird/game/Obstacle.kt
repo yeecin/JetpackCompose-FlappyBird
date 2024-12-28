@@ -17,6 +17,7 @@ class Obstacle(
     callback: ObstacleCallback
 ) :
     Interactions {
+
     private val height: Int
     private val width = resources.getDimension(R.dimen.obstacle_width).toInt()
     private val separation = resources.getDimension(R.dimen.obstacle_separation).toInt()
