@@ -9,6 +9,7 @@ import android.graphics.Rect
 import com.mudasirmukhtar3.jcflappybird.R
 import java.util.Random
 
+
 class Obstacle(
     resources: Resources,
     private val screenHeight: Int,
