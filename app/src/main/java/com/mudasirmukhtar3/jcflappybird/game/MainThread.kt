@@ -9,7 +9,6 @@ class MainThread(private val surfaceHolder: SurfaceHolder, gameScreen: GameScree
     fun setRunning(isRunning: Boolean) {
         running = isRunning
     }
-
     override fun run() {
         var startTime: Long
         var timeMillis: Long
