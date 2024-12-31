@@ -49,7 +49,6 @@ class MainThread(private val surfaceHolder: SurfaceHolder, gameScreen: GameScree
             }
         }
     }
-
     companion object {
         private var canvas: Canvas? = null
     }
