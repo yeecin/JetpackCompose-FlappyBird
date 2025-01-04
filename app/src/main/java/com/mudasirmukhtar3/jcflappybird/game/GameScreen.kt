@@ -60,7 +60,6 @@ class GameScreen(context: Context) :
         mpHit = MediaPlayer.create(context, R.raw.hit)
         mpWing = MediaPlayer.create(context, R.raw.wing)
     }
-
     override fun surfaceCreated(holder: SurfaceHolder) {
         thread.setRunning(true)
         thread.start()
