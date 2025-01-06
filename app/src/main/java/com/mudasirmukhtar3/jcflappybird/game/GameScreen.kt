@@ -26,7 +26,6 @@ class GameScreen(context: Context) :
     private var score = 0
     private var birdPosition: Rect? = null
     private var obstaclePositions = HashMap<Obstacle, List<Rect>>()
-
     private var mpPoint: MediaPlayer? = null
     private var mpSwoosh: MediaPlayer? = null
     private var mpDie: MediaPlayer? = null
