@@ -16,7 +16,6 @@ class GameScreen(context: Context) :
     SurfaceView(context), SurfaceHolder.Callback, GameManagerCallback {
     var thread: MainThread
     private var gameState = GameState.INITIAL
-
     private var bird: Bird? = null
     private var background: Background? = null
     private val dm: DisplayMetrics
