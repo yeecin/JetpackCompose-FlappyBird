@@ -47,6 +47,7 @@ fun KMPFlappyBirdTheme(
       else -> LightColorScheme
     }
 
+
     MaterialTheme(
       colorScheme = colorScheme,
       typography = Typography,
