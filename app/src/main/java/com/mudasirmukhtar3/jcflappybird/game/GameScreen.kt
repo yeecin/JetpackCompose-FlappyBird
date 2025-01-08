@@ -36,7 +36,6 @@ class GameScreen(context: Context) :
         initSounds()
         holder.addCallback(this)
         thread = MainThread(holder, this)
-
         dm = DisplayMetrics()
         (context as Activity).windowManager.defaultDisplay.getMetrics(dm)
 
