@@ -64,7 +64,6 @@ class GameScreen(context: Context) :
         thread.setRunning(true)
         thread.start()
     }
-
     override fun surfaceChanged(holder: SurfaceHolder, format: Int, width: Int, height: Int) {
     }
 
