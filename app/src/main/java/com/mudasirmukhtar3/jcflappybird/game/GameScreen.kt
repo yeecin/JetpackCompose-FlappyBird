@@ -79,7 +79,6 @@ class GameScreen(context: Context) :
             retry = false
         }
     }
-
     fun update() {
         when (gameState) {
             GameState.PLAYING -> {
