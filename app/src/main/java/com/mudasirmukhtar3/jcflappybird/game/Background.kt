@@ -11,7 +11,6 @@ class Background(resources: Resources, private val screenHeight: Int) : Interact
     private val bottom: Bitmap
     private val topHeight = resources.getDimension(R.dimen.bkg_top_height).toInt()
     private val bottomHeight = resources.getDimension(R.dimen.bkg_bottom_height).toInt()
-
     init {
         val bkgTop = BitmapFactory.decodeResource(resources, R.drawable.sky)
         val bkgBottom = BitmapFactory.decodeResource(resources, R.drawable.ground)
