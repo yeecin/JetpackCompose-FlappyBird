@@ -17,7 +17,6 @@ class Background(resources: Resources, private val screenHeight: Int) : Interact
         top = Bitmap.createScaledBitmap(bkgTop, bkgTop.width, topHeight, false)
         bottom = Bitmap.createScaledBitmap(bkgBottom, bkgBottom.width, bottomHeight, false)
     }
-
     override fun draw(canvas: Canvas?) {
         canvas!!.drawBitmap(top, 0f, 0f, null)
         canvas.drawBitmap(top, top.width.toFloat(), 0f, null)
