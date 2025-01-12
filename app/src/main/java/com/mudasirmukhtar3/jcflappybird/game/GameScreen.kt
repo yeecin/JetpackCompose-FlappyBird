@@ -53,7 +53,6 @@ class GameScreen(context: Context) :
         gameMessage = GameMessage(resources, dm.heightPixels, dm.widthPixels)
         scoreSprite = Score(resources, dm.heightPixels, dm.widthPixels)
     }
-
     private fun initSounds() {
         mpPoint = MediaPlayer.create(context, R.raw.point)
         mpSwoosh = MediaPlayer.create(context, R.raw.swoosh)
