@@ -28,7 +28,6 @@ class Background(resources: Resources, private val screenHeight: Int) : Interact
             null
         )
     }
-
     override fun update() {
     }
 }
