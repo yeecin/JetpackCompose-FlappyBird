@@ -23,7 +23,6 @@ class Bird(
     private var currentFallingSpeed = 0f
     private val flappyBoost: Float
     private var collision = false
-
     init {
         birdY = screenHeight / 2
         birdWidth = resources.getDimension(R.dimen.bird_width).toInt()
