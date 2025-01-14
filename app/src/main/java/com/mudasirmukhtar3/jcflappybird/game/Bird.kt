@@ -35,7 +35,6 @@ class Bird(
         val birdBmpUp = BitmapFactory.decodeResource(resources, R.drawable.bird_up)
         bird_up = Bitmap.createScaledBitmap(birdBmpUp, birdWidth, birdHeight, false)
     }
-
     override fun draw(canvas: Canvas?) {
         if (currentFallingSpeed < 0) {
             canvas!!.drawBitmap(bird_up, birdX.toFloat(), birdY.toFloat(), null)
