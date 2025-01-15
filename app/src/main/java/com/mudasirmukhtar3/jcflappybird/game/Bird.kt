@@ -42,7 +42,6 @@ class Bird(
             canvas!!.drawBitmap(bird_down, birdX.toFloat(), birdY.toFloat(), null)
         }
     }
-
     override fun update() {
         if (collision) {
             if (birdY + bird_down.height < screenHeight) {
