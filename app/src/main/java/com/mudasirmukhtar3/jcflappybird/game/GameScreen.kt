@@ -12,7 +12,6 @@ import android.view.SurfaceHolder
 import android.view.SurfaceView
 import com.mudasirmukhtar3.jcflappybird.R
 
-
 class GameScreen(context: Context) :
     SurfaceView(context), SurfaceHolder.Callback, GameManagerCallback {
     var thread: MainThread
