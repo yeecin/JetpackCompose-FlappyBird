@@ -61,7 +61,6 @@ class Bird(
             currentFallingSpeed = flappyBoost
         }
     }
-
     fun collision() {
         collision = true
     }
