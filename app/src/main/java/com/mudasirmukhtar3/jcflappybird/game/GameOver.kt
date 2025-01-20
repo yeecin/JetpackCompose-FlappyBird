@@ -9,7 +9,6 @@ import com.mudasirmukhtar3.jcflappybird.R
 class GameOver(resources: Resources?, private val screenHeight: Int, private val screenWidth: Int) :
     Interactions {
     private val gameOver: Bitmap = BitmapFactory.decodeResource(resources, R.drawable.gameover)
-
     override fun draw(canvas: Canvas?) {
         canvas!!.drawBitmap(
             gameOver,
