@@ -13,7 +13,6 @@ class GameMessage(
 ) :
     Interactions {
     private val message: Bitmap = BitmapFactory.decodeResource(resources, R.drawable.message)
-
     override fun draw(canvas: Canvas?) {
         canvas!!.drawBitmap(
             message,
