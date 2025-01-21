@@ -21,7 +21,6 @@ class GameMessage(
             null
         )
     }
-
     override fun update() {
     }
 }
