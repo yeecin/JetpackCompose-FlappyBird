@@ -10,7 +10,6 @@ class GameOver(resources: Resources?, private val screenHeight: Int, private val
     Interactions {
     private val gameOver: Bitmap = BitmapFactory.decodeResource(resources, R.drawable.gameover)
 
-
     override fun draw(canvas: Canvas?) {
         canvas!!.drawBitmap(
             gameOver,
