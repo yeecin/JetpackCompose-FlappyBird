@@ -18,7 +18,6 @@ class GameOver(resources: Resources?, private val screenHeight: Int, private val
             null
         )
     }
-
     override fun update() {
     }
 }
