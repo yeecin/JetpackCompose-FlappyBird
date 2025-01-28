@@ -7,7 +7,6 @@ class MainThread(private val surfaceHolder: SurfaceHolder, gameScreen: GameScree
     private val gameScreen: GameScreen = gameScreen
     private var running = false
     private val targetFPS = 60
-
     fun setRunning(isRunning: Boolean) {
         running = isRunning
     }
