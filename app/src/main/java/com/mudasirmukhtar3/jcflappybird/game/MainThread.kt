@@ -2,7 +2,6 @@ package com.mudasirmukhtar3.jcflappybird.game
 
 import android.graphics.Canvas
 import android.view.SurfaceHolder
-
 class MainThread(private val surfaceHolder: SurfaceHolder, gameScreen: GameScreen) : Thread() {
     private val gameScreen: GameScreen = gameScreen
     private var running = false
