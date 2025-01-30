@@ -15,7 +15,6 @@ class MainThread(private val surfaceHolder: SurfaceHolder, gameScreen: GameScree
         var timeMillis: Long
         var waitTime: Long
         val targetTime = (1000 / targetFPS).toLong()
-
         while (running) {
             startTime = System.nanoTime()
             canvas = null
