@@ -92,7 +92,6 @@ class GameScreen(context: Context) :
             }
         }
     }
-
     override fun draw(canvas: Canvas) {
         super.draw(canvas)
         if (canvas != null) {
