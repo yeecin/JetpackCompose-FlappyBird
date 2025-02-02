@@ -104,7 +104,6 @@ class GameScreen(context: Context) :
                     scoreSprite!!.draw(canvas)
                     calculateCollision()
                 }
-
                 GameState.INITIAL -> {
                     bird!!.draw(canvas)
                     gameMessage!!.draw(canvas)
