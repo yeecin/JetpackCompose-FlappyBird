@@ -108,7 +108,6 @@ class GameScreen(context: Context) :
                     bird!!.draw(canvas)
                     gameMessage!!.draw(canvas)
                 }
-
                 GameState.GAME_OVER -> {
                     bird!!.draw(canvas)
                     obstacleManager!!.draw(canvas)
