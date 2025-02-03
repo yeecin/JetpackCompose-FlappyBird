@@ -117,7 +117,6 @@ class GameScreen(context: Context) :
             }
         }
     }
-
     override fun onTouchEvent(event: MotionEvent): Boolean {
         when (gameState) {
             GameState.PLAYING -> {
