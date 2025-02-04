@@ -123,7 +123,6 @@ class GameScreen(context: Context) :
                 bird!!.onTouchEvent()
                 mpWing!!.start()
             }
-
             GameState.INITIAL -> {
                 bird!!.onTouchEvent()
                 mpWing!!.start()
