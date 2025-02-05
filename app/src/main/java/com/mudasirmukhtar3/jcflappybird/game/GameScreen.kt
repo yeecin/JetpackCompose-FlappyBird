@@ -129,7 +129,6 @@ class GameScreen(context: Context) :
                 gameState = GameState.PLAYING
                 mpSwoosh!!.start()
             }
-
             GameState.GAME_OVER -> {
                 initGame()
                 gameState = GameState.INITIAL
