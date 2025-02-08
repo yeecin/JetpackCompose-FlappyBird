@@ -141,7 +141,6 @@ class GameScreen(context: Context) :
         this.birdPosition = birdPosition
     }
 
-
     override fun updatePosition(obstacle: Obstacle?, positions: ArrayList<Rect>?) {
         if (obstaclePositions.containsKey(obstacle)) {
             obstaclePositions.remove(obstacle)
