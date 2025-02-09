@@ -155,7 +155,6 @@ class GameScreen(context: Context) :
     }
 
 
-
     fun calculateCollision() {
         var collision = false
         if (birdPosition!!.bottom > dm.heightPixels) {
