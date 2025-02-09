@@ -147,7 +147,6 @@ class GameScreen(context: Context) :
         }
         obstaclePositions[obstacle!!] = positions!!
     }
-
     override fun removeObstacle(obstacle: Obstacle?) {
         obstaclePositions.remove(obstacle)
         score++
