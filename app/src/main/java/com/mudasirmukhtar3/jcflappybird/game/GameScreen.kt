@@ -153,7 +153,6 @@ class GameScreen(context: Context) :
         scoreSprite!!.updateScore(score)
         mpPoint!!.start()
     }
-
     fun calculateCollision() {
         var collision = false
         if (birdPosition!!.bottom > dm.heightPixels) {
