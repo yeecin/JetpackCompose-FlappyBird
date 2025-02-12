@@ -168,7 +168,6 @@ class GameScreen(context: Context) :
                 }
             }
         }
-
         if (collision) {
             gameState = GameState.GAME_OVER
             bird!!.collision()
