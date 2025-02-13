@@ -176,7 +176,6 @@ class GameScreen(context: Context) :
             mpHit!!.setOnCompletionListener { mpDie!!.start() }
         }
     }
-
     companion object {
         private const val APP_NAME = "FlappyBirdClone"
     }
