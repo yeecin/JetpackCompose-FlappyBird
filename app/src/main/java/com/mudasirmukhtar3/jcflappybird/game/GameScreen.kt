@@ -7,6 +7,7 @@ import android.graphics.Rect
 import android.media.MediaPlayer
 import android.util.DisplayMetrics
 import android.util.Log
+import android.view.KeyEvent
 import android.view.MotionEvent
 import android.view.SurfaceHolder
 import android.view.SurfaceView
@@ -33,6 +34,10 @@ class GameScreen(context: Context) :
     private var mpWing: MediaPlayer? = null
 
     init {
+        isFocusable = true
+        isFocusableInTouchMode = true
+        requestFocus()
+
         initSounds()
         holder.addCallback(this)
         thread = MainThread(holder, this)
@@ -116,6 +121,42 @@ class GameScreen(context: Context) :
                 }
             }
         }
+    }
+    /**
+     * 重写 onKeyDown 方法来处理物理按键事件，特别是遥控器按键。
+     *
+     * @param keyCode 被按下的键的编码。
+     * @param event 描述按键事件的详细对象。
+     * @return 如果你处理了该事件，返回 true；否则返回 false，让系统继续处理。
+     */
+    override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
+        when(gameState){
+            GameState.PLAYING -> {
+                // 在游戏进行中，按下遥控器的 OK 按键时，触发鸟的跳跃。
+                if (keyCode == KeyEvent.KEYCODE_DPAD_CENTER || keyCode == KeyEvent.KEYCODE_ENTER) {
+                    bird!!.onTouchEvent()
+                    mpWing!!.start()
+                }
+            }
+            GameState.INITIAL -> {
+                // 在初始状态下，按下遥控器的 OK 按键时，开始游戏。
+                if (keyCode == KeyEvent.KEYCODE_DPAD_CENTER || keyCode == KeyEvent.KEYCODE_ENTER) {
+                    bird!!.onTouchEvent()
+                    mpWing!!.start()
+                    gameState = GameState.PLAYING
+                    mpSwoosh!!.start()
+                }
+            }
+            GameState.GAME_OVER -> {
+                // 在游戏结束状态下，按下遥控器的 OK 按键时，重新开始游戏。
+                if (keyCode == KeyEvent.KEYCODE_DPAD_CENTER || keyCode == KeyEvent.KEYCODE_ENTER) {
+                    initGame()
+                    gameState = GameState.INITIAL
+                }
+            }
+        }
+        // 调用父类的方法来执行默认的按键行为。
+        return super.onKeyDown(keyCode, event)
     }
     override fun onTouchEvent(event: MotionEvent): Boolean {
         when (gameState) {
